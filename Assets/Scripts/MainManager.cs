@@ -122,11 +122,11 @@ public class MainManager : MonoBehaviour
 
     }
 
-    public void SaveGameRank(string bestPlaterName, int bestPlayerScore)
+    public void SaveGameRank(string bestPlayerName, int bestPlayerScore)
     {
         SaveData data = new SaveData();
 
-        data.TheBestPlayer = bestPlaterName;
+        data.TheBestPlayer = bestPlayerName;
         data.HighiestScore = bestPlayerScore;
 
         string json = JsonUtility.ToJson(data);
